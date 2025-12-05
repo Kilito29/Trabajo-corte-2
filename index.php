@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido</title>
+    <title>Presentación - Santiago</title>
     <style>
         body {
             margin: 0;
@@ -16,38 +16,72 @@
             height: 100vh;
             text-align: center;
         }
+
         .card {
             background: rgba(255, 255, 255, 0.12);
-            padding: 40px;
-            border-radius: 14px;
-            backdrop-filter: blur(12px);
+            padding: 45px;
+            border-radius: 16px;
+            backdrop-filter: blur(14px);
             box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+            max-width: 520px;
+            animation: fadeIn 0.9s ease-in-out;
         }
+
         h1 {
             margin: 0;
-            font-size: 42px;
-            font-weight: 700;
+            font-size: 40px;
+            font-weight: 800;
         }
-        p {
-            margin-top: 12px;
-            font-size: 18px;
+
+        h2 {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 300;
             opacity: 0.9;
         }
-        .footer {
+
+        p {
+            margin-top: 18px;
+            font-size: 18px;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .btn {
             margin-top: 25px;
-            font-size: 14px;
-            opacity: 0.7;
+            display: inline-block;
+            padding: 12px 25px;
+            background: white;
+            color: #4a00e0;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #e0e0e0;
+        }
+
+        @keyframes fadeIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <h1>¡Hola, bienvenido!</h1>
-        <p>Tu aplicación PHP está funcionando correctamente en Azure 🚀</p>
-        <div class="footer">
-            Desplegado automáticamente desde GitHub Actions
-        </div>
+        <h1>Hola, soy Santiago 👋</h1>
+        <h2>Estudiante de programación y apasionado por el deporte</h2>
+
+        <p>
+            Estoy aprendiendo desarrollo de software, trabajando con HTML, PHP y Azure.  
+            Me gusta crear proyectos, aprender cosas nuevas y mejorar cada día.  
+            También practico tenis y me interesa enseñar y ayudar a otros a crecer.
+        </p>
+
+        <a class="btn" href="#" onclick="alert('Pronto habrán más secciones 😎')">Ver más</a>
     </div>
 
 </body>
